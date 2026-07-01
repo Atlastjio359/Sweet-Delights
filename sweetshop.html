@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights - Your Favorite Desserts</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for modern look, and Dancing Script for a fancy touch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="dancing-script text-3xl font-bold text-amber-600">Sweet Delights</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#menu" class="text-gray-600 hover:text-amber-500 transition-colors duration-300">Our Menu</a>
+                <a href="#about" class="text-gray-600 hover:text-amber-500 transition-colors duration-300">Our Story</a>
+                <a href="#contact" class="text-gray-600 hover:text-amber-500 transition-colors duration-300">Contact Us</a>
+                <button class="bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-4 rounded-full shadow-lg transition-all duration-300">Order Online</button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#menu" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Our Menu</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Our Story</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact Us</a>
+            <button class="w-full text-left bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-4 rounded-b-lg">Order Online</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white p-4">
+        <!-- Placeholder for a background image -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1500x800/A3E635/534D41?text=A+Plate+of+Delicious+Sweets');"></div>
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative z-10 p-6 md:p-12 rounded-xl bg-white bg-opacity-20 backdrop-blur-sm">
+            <h1 class="dancing-script text-5xl md:text-7xl font-bold mb-4">Crafted with Love, Sweetened by Tradition</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Discover our collection of handcrafted, authentic sweets that bring joy to every occasion.</p>
+            <a href="#menu" class="bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-8 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105">Browse Our Collection</a>
+        </div>
+    </section>
+
+    <!-- Our Menu Section -->
+    <section id="menu" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="dancing-script text-2xl md:text-5xl font-bold text-amber-600 mb-4">Our Signature Delights</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-12">From classic favorites to new creations, each sweet is a masterpiece of flavor and artistry.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sweet Item 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-10 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\dessert\images\gajar halwa.jpeg"alt="Gulab Jamun" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">Gulab Jamun</h3>
+                    <p class="text-center text-gray-600">Gulab jamun is a sweet confectionery or dessert, originating in the Indian subcontinent, and a type of mithai popular in India, Bangladesh, Nepal, Pakistan, the Maldives, as well as Myanmar.</p>
+                </div>
+                <!-- Sweet Item 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-10 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\dessert\images\rabdi.jpeg"alt="Angoor rabdi" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">Angoor rabdi</h3>
+                    <p class="text-center text-gray-600">Rabri is a traditional Indian sweet dish made from sweetened, thickened milk with layers of cream or malai. It is prepared by slowly simmering full-fat milk until it condenses, and a layer of cream forms and is then collected.</p>
+                </div>
+                <!-- Sweet Item 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-10 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshop\images\besan ladoo.jpeg"alt="besan Ladu" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">besan Ladu</h3>
+                    <p class="text-center text-gray-600">Besan laddu is another sweet that is often prepared and offered to Lord Ganesha, especially during festivals and family celebrations.</p>
+                </div>
+                <!-- Sweet Item 4 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\burfi.jpeg"alt="burfi" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">burfi</h3>
+                    <p class="text-center text-gray-600">Barfi or burfi is a milk-based sweet from the Indian subcontinent with a fudge-like consistency. It is consumed throughout India and Pakistan and is especially popular in North India.</p>
+                </div>
+                <!-- Sweet Item 5 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\fruit custard.jpeg" alt="fruit custard" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2"> fruit custard</h3>
+                    <p class="text-center text-gray-600">Fruit custard typically requires milk, custard powder, sugar, and a variety of fresh, chopped fruits. Other common ingredients can include vanilla essence, cardamom powder, fresh cream, and optional garnishes like nuts or jelly.</p>
+                </div>
+<!-- Sweet Item 6 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\coconut burfi.jpeg" alt="coconut burfi" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">coconut burfi</h3>
+                    <p class="text-center text-gray-600">Coconut Burfi is a traditional Indian Sweet made with coconut, sugar/jaggery, milk, cardamoms and sometimes nuts. Known by different names such as Kobbari burfi, Nariyal burfi, Copra pak & Tengai burfi, it a popular festive delight that's delicious and addictive too.</p>
+                </div>
+<!-- Sweet Item 7 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\jalebi.webp"alt="jalebi" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">jalebi</h3>
+                    <p class="text-center text-gray-600">alebi is a popular sweet snack in the Indian subcontinent, West Asia and some parts of Africa. It goes by many names, including jilapi, zelepi, jilebi, jilipi, zulbia, zoolbia, jerry, mushabak, z'labia, or zalabia.</p>
+                </div>
+<!-- Sweet Item 8 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\Gajar Halwa.webp" alt="Gajar Halwa" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">Gajar Halwa</h3>
+                    <p class="text-center text-gray-600">Gajar ka halwa, also known as gajorer halwa, gajarno halwo, gajrela, gajar pak, and carrot pudding, is a sweet Indian dessert made by placing grated carrots in a pot containing a specific amount of water, milk, sugar, and cardamom and then cooking with ghee while stirring regularly.</p>
+                </div>
+<!-- Sweet Item 9 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\kaju katli.jpeg" alt="kaju katli" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">kaju katli</h3>
+                    <p class="text-center text-gray-600">Kaju katli is an Indian dessert. Kaju means cashew; barfi is often made by thickening milk with sugar and other ingredients. Kesar kaju katli includes saffron. It is similar to barfi, but unlike barfi, it typically contains no milk.</p>
+                </div>
+<!-- Sweet Item 10 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\kalakand.jpeg"alt="kalakand" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">kalakand</h3>
+                    <p class="text-center text-gray-600">Kalakand is a sweet cheese confection from India. It has been described as akin to Italian cheesecake, firmer in texture than milk cake, but softer than burfis.</p>
+                </div>
+<!-- Sweet Item 11 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\rasgulaa.jpg" alt="Rasgulla" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">Rasgulla</h3>
+                    <p class="text-center text-gray-600">Rasgulla is a syrupy dessert popular in the eastern part of South Asia. It is made from ball-shaped dumplings of chhena dough, cooked in light sugar syrup. This is done until the syrup permeates the dumplings.</p>
+                </div>
+<!-- Sweet Item 12 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="C:\Users\hp\OneDrive\Desktop\sweetshopp\images\suji halwa.jpeg" alt="suji halwa" class="w-full rounded-xl mb-4">
+                    <h3 class="dancing-script text-2xl font-bold text-amber-600 mb-2">suji halwa</h3>
+                    <p class="text-center text-gray-600">Suji ka Halwa or Mohan Bhog is a type of halvah in South Asian cuisine made by toasting semolina in a fat like ghee or oil, and                         adding a sweetener like sugar syrup, honey, or jaggery powder.</p>
+                </div>
+
+
+
+
+                            
+
+
+
+        </div>
+    </section>
+
+    <!-- About Our Story Section -->
+    <section id="about" class="bg-amber-100 py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/FDE68A/534D41?text=Sweet+Delights+Story" alt="Sweet shop story" class="rounded-2xl shadow-xl w-full">
+            </div>
+            <div class="md:w-1/2 md:text-left text-center">
+                <h2 class="dancing-script text-4xl md:text-5xl font-bold text-amber-600 mb-4">Our Sweet Journey</h2>
+                <p class="text-gray-600 text-lg mb-4">For over 30 years, our family has been committed to creating the finest sweets. Our recipes, passed down through generations, are a testament to our passion for tradition and quality.</p>
+                <p class="text-gray-600 text-lg">We believe that every sweet tells a story. That's why we use only the freshest, high-quality ingredients to craft each dessert with meticulous care, ensuring a taste that is both authentic and unforgettable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="dancing-script text-4xl md:text-5xl font-bold text-amber-600 mb-4">What Our Customers Say</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-12">Don't just take our word for it. Here's what some of our happy customers have to say about our sweets.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <p class="text-gray-700 italic mb-4">"The best sweets I've ever tasted! The quality and flavor are simply unmatched. A truly delightful experience."</p>
+                    <p class="font-semibold text-amber-600">- Sarah J.</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <p class="text-gray-700 italic mb-4">"I ordered for a family gathering and everyone loved them! The sweets were fresh and incredibly delicious."</p>
+                    <p class="font-semibold text-amber-600">- John P.</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <p class="text-gray-700 italic mb-4">"Sweet Delights has become my go-to for all special occasions. Their commitment to tradition shines through in every bite."</p>
+                    <p class="font-semibold text-amber-600">- Emily R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-amber-100 py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="dancing-script text-4xl md:text-5xl font-bold text-amber-600 mb-4">Contact Us</h2>
+            <p class="text-gray-600 max-w-xl mx-auto mb-8">Have a question or a special order? We'd love to hear from you!</p>
+            <form action="#" method="POST" class="bg-white p-8 rounded-2xl shadow-xl max-w-lg mx-auto">
+                <div class="mb-6">
+                    <label for="name" class="block text-left font-medium mb-2 text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-left font-medium mb-2 text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-left font-medium mb-2 text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 rounded-full transition-all duration-300 transform hover:scale-105">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2 dancing-script text-amber-400">Sweet Delights</p>
+            <p class="text-sm text-gray-400">&copy; 2025 Sweet Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for mobile menu toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
